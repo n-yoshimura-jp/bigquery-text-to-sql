@@ -1,0 +1,119 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments (project-root venv)
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+bin/
+include/
+share/
+pyvenv.cfg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Type checker caches
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Logs
+*.log
+logs/
+
+# OS-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# dotenv / secrets
+.env
+.env.*
+*.env
+
+# Databases / data artifacts (optional)
+*.sqlite3
+
+# Service account keys and secrets (Google/BigQuery)
+*-credentials.json
+*-key.json
+*service-account*.json
+bigquery-*.json
+bigquery-project-*.json
+google-credentials.json
+secrets.json
+
+# Node (if present)
+node_modules/
+
+# Output artifacts
+output/
+Output/
+
+# Common secrets directories
+secrets/
+.secrets/
+credentials/
+keys/
+
+# direnv/pyenv (optional)
+.envrc
+.python-version
