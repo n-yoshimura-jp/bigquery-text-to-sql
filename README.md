@@ -13,7 +13,7 @@
 ## 前提条件
 - Python 3.10 以上
 - BigQuery プロジェクトと対象データセット
-- OpenAI API キー（`gpt-5-mini` などを利用可能なプラン）
+- OpenAI API キー（`gpt-4o-mini` を利用可能なプラン）
 - Slack ワークスペース（結果を投稿する場合）
 - Google Cloud のサービスアカウント JSON キー
 
@@ -56,9 +56,9 @@
 3. プロンプトに従って分析したい質問を入力します。  
    例: `地域別のデータを集計して、傾向を分析して下さい。`
 4. スクリプトが自動で BigQuery にアクセスしてデータを取得し、統計情報とインサイトを生成します。
-5. 生成された結果は `OUTPUT_DIR/Output` 配下に保存され、Slack トークンとチャンネル ID を設定している場合は同時に Slack に投稿されます。
+5. 生成された結果は `OUTPUT_DIR/Output` 配下に保存されます。初期設定では Slack には投稿しません。
 
-> **メモ:** Slack 連携が不要な場合は、`src/bigquery_data_insights_slack.py` の末尾にある `ask_and_analyze(..., post_to_slack=True)` を `False` に変更してください。
+> **メモ:** Slack にも投稿する場合は、`.env` に `SLACK_BOT_TOKEN` と `SLACK_CHANNEL_ID` を設定したうえで、`src/bigquery_data_insights_slack.py` の末尾にある `ask_and_analyze(..., post_to_slack=False)` を `True` に変更してください。
 
 ## 出力ファイル
 デフォルトでは `./output/Output` 以下に次のファイルが生成されます。
